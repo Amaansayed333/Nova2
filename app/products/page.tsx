@@ -6,7 +6,8 @@ import CarouselAdvanced from "@/components/ui/carousel-advanced"
 import { useState } from "react"
 
 export default function Products() {
-  const [activeCategory, setActiveCategory] = useState("poultry")
+  type CategoryKey = "poultry" | "metals" | "minerals" | "agri" | "realestate"
+  const [activeCategory, setActiveCategory] = useState<CategoryKey>("poultry")
 
   const categories = {
     poultry: {
@@ -201,10 +202,10 @@ export default function Products() {
             {Object.entries(categories).map(([key, cat]) => (
               <button
                 key={key}
-                onClick={() => setActiveCategory(key)}
+                onClick={() => setActiveCategory(key as CategoryKey)}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${activeCategory === key
-                    ? "bg-blue-600 text-white shadow-lg"
-                    : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+                  ? "bg-blue-600 text-white shadow-lg"
+                  : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                   }`}
               >
                 {cat.title}
