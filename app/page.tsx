@@ -24,14 +24,14 @@ export default function Home() {
         {/* Content Container */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center">
           {/* Badge */}
-<div className="mb-10 inline-block">
-  <div className="px-8 py-4 rounded-full bg-white/15 backdrop-blur-md border border-white/25 flex items-center gap-3 shadow-lg">
-    <div className="w-5 h-5 rounded-full bg-emerald-400 animate-pulse"></div>
-    <span className="text-base md:text-lg font-semibold text-white tracking-wide">
+<div className="mb-12 inline-block">
+  <div className="px-10 py-4 rounded-full bg-white/15 backdrop-blur-md border border-white/30 shadow-lg">
+    <span className="text-lg md:text-xl font-bold text-white tracking-wide">
       Nova Global Enterprises
     </span>
   </div>
 </div>
+
 
 
           {/* Main Heading */}
