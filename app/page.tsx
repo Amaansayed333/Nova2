@@ -23,14 +23,21 @@ export default function Home() {
 
         {/* Content Container */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center">
-          {/* Badge */}
+          {/* Live Border Badge */}
 <div className="mb-12 inline-block">
-  <div className="px-10 py-4 rounded-full bg-white/15 backdrop-blur-md border border-white/30 shadow-lg">
-    <span className="text-lg md:text-xl font-bold text-white tracking-wide">
-      Nova Global Enterprises
-    </span>
+  <div className="relative rounded-full p-[2px] overflow-hidden animate-border-spin">
+    {/* Moving White Border */}
+    <div className="absolute inset-0 rounded-full bg-[conic-gradient(from_0deg,#ffffff,#ffffff,#ffffff,#ffffff)]"></div>
+
+    {/* Inner Content */}
+    <div className="relative px-10 py-4 rounded-full bg-white/15 backdrop-blur-md border border-white/30 shadow-lg">
+      <span className="text-lg md:text-xl font-bold text-white tracking-wide">
+        Nova Global Enterprises
+      </span>
+    </div>
   </div>
 </div>
+
 
 
 
