@@ -27,7 +27,7 @@ export default function Home() {
 <div className="mb-12 inline-block">
   <div className="relative rounded-full p-[2px] overflow-hidden animate-border-spin">
     {/* Moving White Border */}
-    <div className="absolute inset-0 rounded-full bg-[conic-gradient(from_0deg,#ffffff,#ffffff,#ffffff,#ffffff)]"></div>
+    <div className="absolute inset-0 rounded-full bg-[conic-gradient(from_0deg,#E4FF30,#ffffff,#ffffff,#E4FF30)]"></div>
 
     {/* Inner Content */}
     <div className="relative px-10 py-4 rounded-full bg-white/15 backdrop-blur-md border border-white/30 shadow-lg">
