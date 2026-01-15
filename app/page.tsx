@@ -13,23 +13,26 @@ export default function Home() {
     <main className="w-full">
       <Navigation />
 
-      {/* Hero Section with Gradient Aurora Background */}
+      {/* Hero Section with Solid Corporate Blue Background */}
       <section className="relative w-full min-h-screen overflow-hidden flex items-center justify-center">
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-emerald-500 via-purple-500 to-slate-950">
+        <div className="absolute inset-0 z-0 bg-blue-900">
           <div className="absolute inset-0 opacity-30 mix-blend-multiply">
-            <Aurora colorStops={["#10b981", "#a855f7", "#0f172a"]} amplitude={0.5} blend={0.4} speed={0.8} />
+            <Aurora colorStops={["#1e40af", "#3b82f6", "#1e3a8a"]} amplitude={0.5} blend={0.4} speed={0.8} />
           </div>
         </div>
 
         {/* Content Container */}
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center">
           {/* Badge */}
-          <div className="mb-8 inline-block">
-            <div className="px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center gap-2">
-              <div className="w-4 h-4 rounded-full bg-emerald-400"></div>
-              <span className="text-sm font-medium text-white">Nova Global Enterprises</span>
-            </div>
-          </div>
+<div className="mb-10 inline-block">
+  <div className="px-8 py-4 rounded-full bg-white/15 backdrop-blur-md border border-white/25 flex items-center gap-3 shadow-lg">
+    <div className="w-5 h-5 rounded-full bg-emerald-400 animate-pulse"></div>
+    <span className="text-base md:text-lg font-semibold text-white tracking-wide">
+      Nova Global Enterprises
+    </span>
+  </div>
+</div>
+
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
@@ -84,7 +87,7 @@ export default function Home() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="p-8 rounded-xl bg-gradient-to-br from-blue-50 to-slate-50 border border-blue-100 hover:shadow-lg transition-all duration-300 group"
+                className="p-8 rounded-xl bg-blue-50 border border-blue-100 hover:shadow-lg transition-all duration-300 group"
               >
                 <item.icon className="w-12 h-12 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="font-semibold text-lg text-slate-900 mb-2">{item.title}</h3>
@@ -96,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* Product Categories Preview */}
-      <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Our Commodities</h2>
@@ -138,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Import or Export?</h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
